@@ -1,3 +1,7 @@
+⚠️ FOR DYNAMIC, 3D PLOTS AND BEST EXPERIENCE please view the notebook on nbviewer or Google Colab, as GitHub's built-in viewer cannot render heavy interactive JavaScript or 3D plots. ⚠️
+
+[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/github_datascience_projects/blob/main/project_6_kaggle_classification_competition/kaggle_competition.ipynb) or [View full notebook on Google Colab](https://colab.research.google.com/github/barofrx-svg/github_datascience_projects/blob/main/project_6_kaggle_classification_competition/kaggle_competition.ipynb)
+
 # Kaggle Competition: Smartphone Addiction Prediction
 
 ## 1. Overview

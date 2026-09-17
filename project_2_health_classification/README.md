@@ -1,16 +1,18 @@
-# Note!!
-For the best experience please view the notebook on nbviewer, it handles large files and 3d plots.
-[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/data_science_portfolio/blob/main/project_2_health_classification/project_2.ipynb)
+⚠️ FOR DYNAMIC, 3D PLOTS AND BEST EXPERIENCE please view the notebook on nbviewer or Google Colab, as GitHub's built-in viewer cannot render heavy interactive JavaScript or 3D plots. ⚠️
+
+[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/github_datascience_projects/blob/main/project_2_health_classification/project_2.ipynb) or [View full notebook on Google Colab](https://colab.research.google.com/github/barofrx-svg/github_datascience_projects/blob/main/project_2_health_classification/project_2.ipynb)
+
 
 # Diabetes Classification
 In this detailed project went through the steps of preprocessing, feature selection, model training, optimization and model interpretability with SHAP.
 
-The final model achieved 75% accuracy on the out-of-fold test set, using only very basic health information.
+The final model achieved 75% accuracy on the out-of-fold test set, using only very basic sociological and health data.
 
 # The following charts are just a subset of what is actually inside the project.
 
 ## Correlation Plot
-<img width="1061" height="1111" alt="1" src="https://github.com/user-attachments/assets/def9c6d5-50a2-4db6-b070-c8dfe2745441" />
+<img width="1061" height="1111" alt="1" src="https://github.com/user-attachments/assets/83058b27-08a3-4c39-97ba-da285e351f5f" />
+
 
 A good note is that there is no strong correlation between features, this eliminates the risk of multicolinearity, redundancy and data leakage onto the the target variable. Absolute values higher than 0.9 are strong sign that this problem exists.
 
@@ -20,7 +22,8 @@ The highest absolute correlation regarding the target variable is with General H
 - Close to -1 -> they move highly together, but opposite direction.
 
 ## Slice Plot
-<img width="1800" height="525" alt="6" src="https://github.com/user-attachments/assets/3807ebd9-152c-4b3c-aec7-a5152f1b6681" />
+<img width="1800" height="525" alt="6" src="https://github.com/user-attachments/assets/a6b54613-d010-41b2-b8e4-1d8d696511f3" />
+
 Slice plot shows how different values for hyperparameters influenced the accuracy. The color indicates which attempt of iteration it was. Blue -> end of the trial, white -> one of the first trials.
 
 2 Hyperparameters show interesting releations
@@ -37,7 +40,8 @@ So I can see where the underfitting and overfitting intersect, generating a maxi
 If accuracy decreases as the l1_ratio approaches 1, it means that forcing the model to drop columns is destroying valuable information. This tells me that the dataset does not have just one or two features that predict the target on their own. Instead it relies on a complex web of many different features all working 
 
 ## Summary Plot
-<img width="1757" height="790" alt="2" src="https://github.com/user-attachments/assets/cbbf640e-5d65-4209-b889-1e8323a2270e" />
+<img width="1757" height="790" alt="2" src="https://github.com/user-attachments/assets/56e1d8ad-a1ae-40e7-aa2c-ee954a4a98f4" />
+
 Summary plot generates a clear explanation about the feature set. The features are sorted from top to bottom with highest feature importance being at the top. Then on the left side of each feature there is a violin plot with color differentiation.
 
 - Red: Means that the patient had a high observed value in that feature. So it could be 1 for HighBP or 5 for GenHlth.
@@ -61,10 +65,11 @@ The Linear model shows me from the plot that each 20 year old group has the same
 7. Education: Higher education, reduces the risk for both models, altough this is not a major effect.
 
 
-Features that are not visible and that are shown at the bottom are not significant, dropping these should not make the models worse, even it could help by removing the noise they brind. So the models can focus truly on the usefule information.
+Features that are not visible and that are shown at the bottom are not significant, dropping these should not make the models worse, even it could help by removing the noise they bring. So the models can focus truly on the useful information.
 
 ## Decision Plot for 250 patients
-<img width="1990" height="989" alt="5" src="https://github.com/user-attachments/assets/6fa97b92-4810-4762-a38e-e77349ce2771" />
+<img width="1990" height="989" alt="5" src="https://github.com/user-attachments/assets/db340377-3d06-4ff5-9bf3-70f289cb65d7" />
+
 The decision plot is an elegant way to visualize the cumulative mathematical journey of multiple patients at once. Here I used a subset of 250 patients. It tracks the prediction trajectory from the baseline expectation at the bottom to the final output at the top. The plot naturally forms a funnel shape, starting narrow at the base and expanding out widely at the top. 
 
 The narrow base visually proves that the bottom features have virtually zero impact on the target variable the lines travel straight up without deviating. As the lines reach the most important features at the top, the accumulated SHAP values cause them to violently snap left (decreasing risk) or right (increasing risk), fanning out into their final individual diagnoses. This visualization perfectly justifies dropping low-importance features, as they do not meaningfully steer the model's final decision. The two models, once again evaulate most of the features the same. That is why the funnel looks identical.

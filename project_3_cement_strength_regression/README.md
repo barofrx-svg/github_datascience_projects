@@ -1,6 +1,7 @@
-# Note!!
-This file is too large for GitHub to render, please visit the following link. Nbviewer can handle 3d plots and large files in the browser:
-[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/data_science_portfolio/blob/main/project_3_cement_strength_regression/project_3_c.ipynb)
+⚠️ FOR DYNAMIC, 3D PLOTS AND BEST EXPERIENCE please view the notebook on nbviewer or Google Colab, as GitHub's built-in viewer cannot render heavy interactive JavaScript or 3D plots. ⚠️
+
+[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/github_datascience_projects/blob/main/project_3_cement_strength_regression/project_3_c.ipynb) or [View full notebook on Google Colab](https://colab.research.google.com/github/barofrx-svg/github_datascience_projects/blob/main/project_3_cement_strength_regression/project_3_c.ipynb)
+
 
 # Multivariate Non-Linear Regression & Multi-Objective Optimization
 

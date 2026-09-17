@@ -1,3 +1,7 @@
+⚠️ FOR DYNAMIC, 3D PLOTS AND BEST EXPERIENCE please view the notebook on nbviewer or Google Colab, as GitHub's built-in viewer cannot render heavy interactive JavaScript or 3D plots. ⚠️
+
+[View full notebook on NBViewer](https://nbviewer.org/github/barofrx-svg/github_datascience_projects/blob/main/project_7_timesereis_forecasting/energy_consumption.ipynb) or [View full notebook on Google Colab](https://colab.research.google.com/github/barofrx-svg/github_datascience_projects/blob/main/project_7_timesereis_forecasting/energy_consumption.ipynb)
+
 # Multi-Horizon Electricity Grid Demand Forecasting
 
 ## 1. Overview

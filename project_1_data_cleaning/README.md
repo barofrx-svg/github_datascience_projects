@@ -12,10 +12,12 @@ In this project I went over the data cleaning process, cleaning column names, fe
 
 ## 4. Images
 Before:
-<img width="1221" height="147" alt="image" src="https://github.com/user-attachments/assets/48358b13-6314-4d70-969a-6aa90caa244d" />
+<img width="1224" height="143" alt="image" src="https://github.com/user-attachments/assets/9ac133c5-a260-476a-895a-b43e86143398" />
+
 
 After:
-<img width="1105" height="137" alt="image" src="https://github.com/user-attachments/assets/e52b2b16-8532-4182-b3e9-e54ec29e7a16" />
+<img width="1099" height="135" alt="image" src="https://github.com/user-attachments/assets/d7681f5f-17d6-41c0-a046-1439daf33fbf" />
+
 
 
 ## 4. How to Run
