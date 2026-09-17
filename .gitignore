@@ -1,0 +1,7 @@
+# Ignore all CSV files
+*.csv
+
+# Ignore data directories and databases
+data/
+**/data/
+*.parquet
